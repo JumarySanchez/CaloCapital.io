@@ -1161,9 +1161,9 @@ function WaitlistPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Waitlist"
-        title="Join the Calo Capital early access waitlist."
-        description="Get updates about consultation openings, market education, and future financial tools."
+        eyebrow="CaloCapital Waitlist"
+        title="Join the CaloCapital waitlist to learn about Crypto RIAs."
+        description="Clients can join to get education, updates, and onboarding information related to Crypto RIAs."
       />
       <WaitlistSection />
     </>
