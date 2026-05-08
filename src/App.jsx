@@ -467,9 +467,9 @@ function StockChart({ coins }) {
 
 function MovingPrompt() {
   const prompts = [
-    "Join the Crypto RIA waitlist for Calo Capital early access.",
-    "This waitlist is exclusively for Crypto RIAs (registered investment advisors).",
-    "Be first to know when the Crypto RIA experience officially launches.",
+    "Join the CaloCapital waitlist to learn about Crypto RIAs.",
+    "Get education, updates, and onboarding details focused on Crypto RIAs.",
+    "Be first to access Calo Capital resources designed around Crypto RIA strategy.",
   ];
   const [index, setIndex] = useState(0);
 
@@ -496,10 +496,10 @@ function WaitlistPromptCard() {
       className="group fixed bottom-5 right-5 z-50 hidden max-w-[280px] rounded-3xl border border-cyan-200/25 bg-[#070a14]/90 p-4 text-white shadow-2xl shadow-cyan-950/40 backdrop-blur-xl transition hover:-translate-y-1 hover:border-cyan-200/50 lg:block"
     >
       <div className="mb-2 flex items-center justify-between gap-3">
-        <span className="rounded-full bg-cyan-300/15 px-3 py-1 text-xs font-black text-cyan-100">CRYPTO RIA WAITLIST</span>
+        <span className="rounded-full bg-cyan-300/15 px-3 py-1 text-xs font-black text-cyan-100">CALOCAPITAL WAITLIST</span>
         <span className="transition group-hover:translate-x-1">→</span>
       </div>
-      <p className="text-sm font-bold leading-5">For Crypto RIAs only: join the waitlist for early access and rollout updates.</p>
+      <p className="text-sm font-bold leading-5">Join the CaloCapital waitlist to learn about Crypto RIAs and advisor opportunities.</p>
     </button>
   );
 }
@@ -720,7 +720,7 @@ function CTASection() {
           }}
           className="mt-8 inline-block rounded-xl bg-violet-300 px-7 py-3.5 text-sm font-black text-slate-950 hover:bg-violet-200"
         >
-          Join the Crypto RIA Waitlist
+          Join the CaloCapital Waitlist
         </button>
       </div>
     </section>
@@ -793,14 +793,14 @@ function WaitlistSection() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_10%,rgba(34,211,238,.12),transparent_28%),radial-gradient(circle_at_80%_70%,rgba(196,181,253,.13),transparent_30%)]" />
       <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
         <div>
-          <p className="mb-3 text-sm font-black uppercase tracking-[0.3em] text-cyan-200">Crypto RIA Waitlist</p>
-          <h2 className="text-3xl font-black sm:text-4xl lg:text-5xl">Crypto RIA Waitlist (RIAs Only)</h2>
+          <p className="mb-3 text-sm font-black uppercase tracking-[0.3em] text-cyan-200">CaloCapital Waitlist</p>
+          <h2 className="text-3xl font-black sm:text-4xl lg:text-5xl">Join the CaloCapital waitlist to learn about Crypto RIAs.</h2>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
-            This waitlist is only for Crypto RIAs. Join to get early access to Calo Capital rollout updates and advisor onboarding details.
+            Clients can join the CaloCapital waitlist to learn about Crypto RIAs, receive rollout updates, and get advisor onboarding details.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             {[
-              [count + 128, "Crypto RIA members"],
+              [count + 128, "Clients learning Crypto RIAs"],
               ["60 sec", "Signup time"],
               ["Free", "Early access"],
             ].map(([value, label]) => (
@@ -813,7 +813,7 @@ function WaitlistSection() {
         </div>
 
         <form onSubmit={handleSubmit} className="rounded-[2rem] border border-cyan-200/20 bg-white/[0.05] p-6 shadow-2xl shadow-cyan-950/30 backdrop-blur-md lg:p-8">
-          {joined && <div className="mb-5 rounded-2xl border border-emerald-300/20 bg-emerald-300/10 p-4 text-sm font-bold text-emerald-200">✅ You're on the Crypto RIA waitlist! A notification has been sent to marc@calocapital.io.</div>}
+          {joined && <div className="mb-5 rounded-2xl border border-emerald-300/20 bg-emerald-300/10 p-4 text-sm font-bold text-emerald-200">✅ You joined the CaloCapital waitlist to learn about Crypto RIAs. A notification has been sent to marc@calocapital.io.</div>}
           <label className="block">
             <span className="mb-2 block text-sm font-bold text-slate-200">Name</span>
             <input required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className="w-full rounded-2xl border border-white/10 bg-[#070a14] px-4 py-3 text-white outline-none ring-cyan-300/30 focus:ring-4" placeholder="Your name" />
@@ -823,18 +823,18 @@ function WaitlistSection() {
             <input required type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className="w-full rounded-2xl border border-white/10 bg-[#070a14] px-4 py-3 text-white outline-none ring-cyan-300/30 focus:ring-4" placeholder="you@email.com" />
           </label>
           <label className="mt-4 block">
-            <span className="mb-2 block text-sm font-bold text-slate-200">Waitlist Type</span>
+            <span className="mb-2 block text-sm font-bold text-slate-200">Learning Track</span>
             <input
-              value="Crypto RIA"
+              value="Crypto RIAs"
               readOnly
               className="w-full rounded-2xl border border-white/10 bg-[#070a14] px-4 py-3 text-white/80 outline-none"
               aria-label="Waitlist type"
             />
           </label>
           <button disabled={loading} className="mt-5 w-full rounded-2xl bg-cyan-300 px-6 py-4 font-black text-slate-950 transition hover:bg-cyan-200 disabled:opacity-50 disabled:cursor-not-allowed">
-            {loading ? "Sending..." : "Join Crypto RIA Waitlist →"}
+            {loading ? "Sending..." : "Join CaloCapital Waitlist →"}
           </button>
-          <p className="mt-4 text-center text-xs leading-5 text-slate-400">No spam. Crypto RIA waitlist notifications are sent to marc@calocapital.io for follow-up.</p>
+          <p className="mt-4 text-center text-xs leading-5 text-slate-400">No spam. This waitlist helps clients learn about Crypto RIAs. Notifications are sent to marc@calocapital.io for follow-up.</p>
         </form>
       </div>
     </section>
