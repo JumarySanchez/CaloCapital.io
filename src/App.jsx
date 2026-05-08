@@ -468,7 +468,7 @@ function StockChart({ coins }) {
 function MovingPrompt() {
   const prompts = [
     "Join the Crypto RIA waitlist for Calo Capital early access.",
-    "This waitlist is exclusively for registered investment advisors in crypto.",
+    "This waitlist is exclusively for Crypto RIAs (registered investment advisors).",
     "Be first to know when the Crypto RIA experience officially launches.",
   ];
   const [index, setIndex] = useState(0);
@@ -499,7 +499,7 @@ function WaitlistPromptCard() {
         <span className="rounded-full bg-cyan-300/15 px-3 py-1 text-xs font-black text-cyan-100">CRYPTO RIA WAITLIST</span>
         <span className="transition group-hover:translate-x-1">→</span>
       </div>
-      <p className="text-sm font-bold leading-5">Join the Crypto RIA-only waitlist for early access and rollout updates.</p>
+      <p className="text-sm font-bold leading-5">For Crypto RIAs only: join the waitlist for early access and rollout updates.</p>
     </button>
   );
 }
@@ -794,13 +794,13 @@ function WaitlistSection() {
       <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
         <div>
           <p className="mb-3 text-sm font-black uppercase tracking-[0.3em] text-cyan-200">Crypto RIA Waitlist</p>
-          <h2 className="text-3xl font-black sm:text-4xl lg:text-5xl">Crypto RIA Waitlist</h2>
+          <h2 className="text-3xl font-black sm:text-4xl lg:text-5xl">Crypto RIA Waitlist (RIAs Only)</h2>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
-            This waitlist is exclusively for Crypto RIAs who want early access to Calo Capital rollout updates and advisor onboarding details.
+            This waitlist is only for Crypto RIAs. Join to get early access to Calo Capital rollout updates and advisor onboarding details.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             {[
-              [count + 128, "Early members"],
+              [count + 128, "Crypto RIA members"],
               ["60 sec", "Signup time"],
               ["Free", "Early access"],
             ].map(([value, label]) => (
