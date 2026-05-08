@@ -496,7 +496,7 @@ function WaitlistPromptCard() {
       className="group fixed bottom-5 right-5 z-50 hidden max-w-[280px] rounded-3xl border border-cyan-200/25 bg-[#070a14]/90 p-4 text-white shadow-2xl shadow-cyan-950/40 backdrop-blur-xl transition hover:-translate-y-1 hover:border-cyan-200/50 lg:block"
     >
       <div className="mb-2 flex items-center justify-between gap-3">
-        <span className="rounded-full bg-cyan-300/15 px-3 py-1 text-xs font-black text-cyan-100">WAITLIST OPEN</span>
+        <span className="rounded-full bg-cyan-300/15 px-3 py-1 text-xs font-black text-cyan-100">CRYPTO RIA WAITLIST</span>
         <span className="transition group-hover:translate-x-1">→</span>
       </div>
       <p className="text-sm font-bold leading-5">Join the Crypto RIA-only waitlist for early access and rollout updates.</p>
@@ -793,7 +793,7 @@ function WaitlistSection() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_10%,rgba(34,211,238,.12),transparent_28%),radial-gradient(circle_at_80%_70%,rgba(196,181,253,.13),transparent_30%)]" />
       <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
         <div>
-          <p className="mb-3 text-sm font-black uppercase tracking-[0.3em] text-cyan-200">Waitlist</p>
+          <p className="mb-3 text-sm font-black uppercase tracking-[0.3em] text-cyan-200">Crypto RIA Waitlist</p>
           <h2 className="text-3xl font-black sm:text-4xl lg:text-5xl">Crypto RIA Waitlist</h2>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
             This waitlist is exclusively for Crypto RIAs who want early access to Calo Capital rollout updates and advisor onboarding details.
